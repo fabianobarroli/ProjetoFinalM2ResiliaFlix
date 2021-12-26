@@ -1,0 +1,16 @@
+.descricaoSite{
+    text-align: center;
+}
+
+body {
+    background-color: #260101;
+    color: #A5A681;
+}
+
+.cor-especial-navegacao {
+    background-color: #8C5332;
+}
+
+.cor-especial-letra {
+    color: #04BF68;
+}
