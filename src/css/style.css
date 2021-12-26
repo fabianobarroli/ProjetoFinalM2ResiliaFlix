@@ -1,16 +1,39 @@
-.descricaoSite{
-    text-align: center;
-}
-
 body {
     background-color: #260101;
+}
+
+.descricaoSite{
+    margin-top: 100px;
+    text-align: center;
     color: #A5A681;
 }
 
 .cor-especial-navegacao {
     background-color: #8C5332;
+    color: #A5A681;
 }
 
-.cor-especial-letra {
+.btn {
+    background-color: #8C5332;
+    color: #04D976;
+}
+
+.card-title {
+    color: #8C5332;
+}
+
+.card-text {
     color: #04BF68;
+}
+
+.cuidaBotao {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.nav-item:hover {
+    color: #04D976;
 }
