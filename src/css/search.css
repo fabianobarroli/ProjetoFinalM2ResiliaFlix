@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+.cor-especial-navegacao {
+  background-color: #363636;
+  color: #04bf68;
+}
+
+#titulo {
+  color: #04bf68;
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.mudacor {
+  font-weight: bolder;
+  font-size: 40px;
+  color: #04d976;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+.principal {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px;
+}
+
+.pesquisa {
+  width: 70%;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#pesquisa-filme {
+  border-radius: 15px;
+  width: 90%;
+}
+
+#btn-pesquisa {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+#btn-pesquisa img {
+  width: 40px;
+  height: 40px;
+}
+
+.deuErro {
+  margin: 45px;
+  width: 70%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.deuErro img {
+  width: 200px;
+  height: 200px;
+  padding: 25px;
+}
+
+.mensagem {
+  color: antiquewhite;
+  font-size: 25px;
+  width: 60%;
+}
+
+.filmeEncontrado {
+  width: 80%;
+}
