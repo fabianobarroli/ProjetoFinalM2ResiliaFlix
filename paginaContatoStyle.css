@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c1c1c;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cabecalho {
+    width: 100%;
+}
+  
+.navbar-toggler{
+       background-color: #04bf68;
+       
+}
+
+.cor-especial-navegacao {
+    background-color: #363636;
+    color: #04bf68;
+}
+  
+#titulo {
+    color: #04bf68;
+    font-size: 25px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+  
+.mudacor {
+    font-weight: bolder;
+    font-size: 40px;
+    color: #04d976;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+  
+
+.container-fluid{
+    justify-items: center;
+    margin: 20px 20px;
+    display: flex;
+    padding: 10px;
+
+
+}
+
+p{
+    color: #04bf68;
+    font-size:20px;
+    text-align: center;
+}
+
+a{
+    color: #04bf68;
+}
