@@ -13,6 +13,7 @@ class Model {
     this.language = "Language";
     this.country = "Country";
     this.runtime = "Runtime";
+    this.response = " ";
   }
 
   buscaFilme() {
@@ -28,6 +29,8 @@ class Model {
         const response = JSON.parse(requisicao.responseText);
         console.log(response);
         this._atualizaFilmes(response);
+      } else {
+        throw new Error("Sistema fora do ar");
       }
     };
     requisicao.send();
@@ -46,6 +49,7 @@ class Model {
     this.language = objeto.Language;
     this.country = objeto.Country;
     this.runtime = objeto.Runtime;
+    this.response = objeto.Response;
   }
 
   getTitulo() {
@@ -94,5 +98,9 @@ class Model {
 
   getDuracao() {
     return this.runtime;
+  }
+
+  getResponse() {
+    return this.response;
   }
 }
