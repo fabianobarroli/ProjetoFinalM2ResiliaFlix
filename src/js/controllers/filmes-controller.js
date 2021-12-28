@@ -7,6 +7,11 @@ class Controller {
     let model = new Model(this.filme);
     model.buscaFilme();
     let view = new View();
-    view.mostraFilme(model);
+
+    if (model.getResponse() == "True") {
+      view.mostraFilme(model);
+    } else {
+      view.mostraErro();
+    }
   }
 }
