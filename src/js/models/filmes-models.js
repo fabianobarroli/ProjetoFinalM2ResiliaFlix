@@ -9,7 +9,7 @@ class Model {
     this.genre = "Genre";
     this.awards = "Awards";
     this.poster = "Poster";
-    this.ratting = "Ratting";
+    this.rating = "Ratings";
     this.language = "Language";
     this.country = "Country";
     this.runtime = "Runtime";
@@ -45,7 +45,7 @@ class Model {
     this.genre = objeto.Genre;
     this.awards = objeto.Awards;
     this.poster = objeto.Poster;
-    this.ratting = objeto.Ratting;
+    this.rating = objeto.Ratings[1].Value;
     this.language = objeto.Language;
     this.country = objeto.Country;
     this.runtime = objeto.Runtime;
@@ -84,8 +84,8 @@ class Model {
     return this.poster;
   }
 
-  getRatting() {
-    return this.ratting;
+  getRating() {
+    return this.rating;
   }
 
   getIdioma() {

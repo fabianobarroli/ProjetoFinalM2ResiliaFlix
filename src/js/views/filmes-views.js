@@ -24,8 +24,8 @@ class View {
     const plot = filme.getPlot();
     $("#plot").text(plot);
 
-    const ratting = filme.getRatting();
-    $("#ratting").text(ratting);
+    const rating = filme.getRating();
+    $("#rating").text(rating);
 
     const idioma = filme.getIdioma();
     $("#idioma").text(idioma);
