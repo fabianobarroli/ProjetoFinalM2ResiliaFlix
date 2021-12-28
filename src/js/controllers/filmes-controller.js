@@ -5,8 +5,8 @@ class Controller {
 
   repassaInfo() {
     let model = new Model(this.filme);
+    model.buscaFilme();
     let view = new View();
-    
-    view.mostraFilme(model.buscaFilme());
+    view.mostraFilme(model);
   }
 }
