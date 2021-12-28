@@ -1,5 +1,8 @@
 class View {
   mostraFilme(filme) {
+    $(".filmeEncontrado").css("display", "flex");
+    $(".mostraErro").css("display", "none");
+
     const poster = filme.getPoster();
     $("#poster").attr("src", poster);
 
@@ -27,10 +30,15 @@ class View {
     const idioma = filme.getIdioma();
     $("#idioma").text(idioma);
 
-    const pais = filme.getCountry();
+    const pais = filme.getPais();
     $("#pais").text(pais);
 
     const duracao = filme.getDuracao();
     $("#duracao").text(duracao);
+  }
+
+  mostraErro() {
+    $(".mostraErro").css("display", "flex");
+    $(".filmeEncontrado").css("display", "none");
   }
 }
