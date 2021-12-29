@@ -8,10 +8,9 @@ body {
   height: inherit;
 }
 .formulario {
-  width: 40%;
-  height: 40%;
   border-radius: 10px;
   background: #363636;
+  width: 45%;
 }
 
 .formulario h4 {
@@ -21,4 +20,15 @@ body {
 section label {
   color: white;
   font-weight: bold;
+}
+footer {
+  background-color: #363636;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #04bf68;
+  font-size: 15px;
+  margin: 0;
 }

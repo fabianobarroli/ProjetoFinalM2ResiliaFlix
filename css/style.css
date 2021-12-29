@@ -92,3 +92,16 @@ form button[type="submit"] {
 .form-control::placeholder {
   color: white;
 }
+footer {
+  background-color: #363636;
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.copyright {
+  color: #04bf68;
+  font-size: 14px;
+}
