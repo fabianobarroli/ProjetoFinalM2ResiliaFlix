@@ -91,32 +91,33 @@
       <section class="mostraErro">
         <img src="../img/error.png" />
         <p class="mensagem">
-          Nossa API só busca filmes com nome em inglês, tente novamente!
+          Filme não encontrado.<br />Tente novamente utilizando o título em
+          inglês.
         </p>
       </section>
 
-      <section class="filmeEncontrado">
+      <section class="filmeEncontrado container-md">
         <section class="caixaposter"><img src="" id="poster" /></section>
         <section class="informacoes">
           <h2 id="tituloFilme"></h2>
 
           <div class="infInicio">
             <p id="ano"></p>
-            &bull;
+            <span class="code"> &bull; </span>
             <p id="duracao"></p>
-            &bull;
+            <span class="code"> &bull; </span>
             <p id="genero"></p>
-            &bull;
+            <span class="code"> &bull; </span>
             <p id="pais"></p>
           </div>
 
           <div class="inf">
-            <p class="descr">Diretor:</div>
+            <p class="descr">Diretor:</p>
             <p class="infAPI" id="diretor"></p>
           </div>
 
           <div class="inf">
-            <p class="descr">Elenco: </p>
+            <p class="descr">Elenco:</p>
             <p class="infAPI" id="atores"></p>
           </div>
 
@@ -130,8 +131,9 @@
 
           <div class="inf">
             <p class="descr">Rotten Tomatoes:</p>
+            <p>&#127813;</p>
             <p class="infAPI" id="rating"></p>
-            <label> &#127813;</label>
+            <p>&#127813;</p>
           </div>
 
           <div class="inf">
@@ -142,6 +144,11 @@
       </section>
     </main>
 
+    <footer>
+      <p class="copyright">
+        &copy; ResiliaFlix Grupo 8- Desenvolvido para fins didáticos. 2021
+      </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/controllers/filmes-controller.js"></script>
