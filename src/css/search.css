@@ -9,7 +9,7 @@ body {
   font-family: "Quicksand", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -25,13 +25,13 @@ body {
 #titulo {
   color: #04bf68;
   font-size: 25px;
-  font-weight: 200;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
 .mudacor {
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 40px;
   color: #04d976;
 }
@@ -53,12 +53,15 @@ body {
 
 .pesquisa {
   width: 70%;
+  height: 100%;
   margin: 50px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 #pesquisa-filme {
+  box-shadow: 2px 2px 5px #04bf68;
   border-radius: 15px;
   width: 90%;
 }
@@ -67,6 +70,7 @@ body {
   background: transparent;
   border: none;
   outline: none;
+  filter: drop-shadow(3px 3px 5px #04bf68);
 }
 
 #btn-pesquisa img {
@@ -74,7 +78,7 @@ body {
   height: 40px;
 }
 
-.deuErro {
+.mostraErro {
   margin: 45px;
   width: 70%;
   display: none;
@@ -82,18 +86,64 @@ body {
   justify-content: center;
 }
 
-.deuErro img {
+.mostraErro img {
   width: 200px;
   height: 200px;
   padding: 25px;
+  filter: drop-shadow(2px 3px 5px #bb2020);
 }
 
 .mensagem {
-  color: antiquewhite;
-  font-size: 25px;
+  color: #04bf68;
+  font-size: 30px;
   width: 60%;
+  text-align: justify;
 }
 
 .filmeEncontrado {
-  width: 80%;
+  width: 90%;
+  color: #a5a681;
+  display: none;
+  justify-content: center;
+  padding: 10px;
+}
+
+#poster {
+  border-radius: 5px;
+  border: 15px solid #363636;
+  box-shadow: 2px 2px 10px #8fbfa9;
+}
+
+.informacoes {
+  width: 50%;
+  padding-left: 25px;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+#tituloFilme {
+  color: #04bf68;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.infInicio {
+  color: #04d976;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inf {
+  display: flex;
+}
+
+.label {
+  color: #04bf68;
+  font-weight: 400;
+}
+
+.infAPI {
+  padding-left: 5px;
+  padding-right: 2px;
 }

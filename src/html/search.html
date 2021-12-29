@@ -75,7 +75,7 @@
       </nav>
     </header>
     <main class="principal">
-      <div class="pesquisa">
+      <section class="pesquisa">
         <input
           type="text"
           name="pesquisa-filme"
@@ -83,31 +83,65 @@
           id="pesquisa-filme"
           placeholder="Busque seu filme"
         />
-        <button id="btn-pesquisa"><img src="../img/search.png" /></button>
-      </div>
+        <button id="btn-pesquisa" type="submit" value="Enviar">
+          <img src="../img/search.png" />
+        </button>
+      </section>
 
-      <div class="deuErro">
+      <section class="mostraErro">
         <img src="../img/error.png" />
         <p class="mensagem">
           Nossa API só busca filmes com nome em inglês, tente novamente!
         </p>
-      </div>
+      </section>
 
-      <div class="filmeEncontrado">
-        <div class="caixaposter"><img src="" id="poster" /></div>
-        <h2 id="tituloFilme"></h2>
-        <p id="diretor"></p>
-        <p id="ano"></p>
-        <p id="plot"></p>
-        <p id="atores"></p>
-        <p id="genero"></p>
-        <p id="premios"></p>
-        <p id="ratting"></p>
-        <p id="idioma"></p>
-        <p id="pais"></p>
-        <p id="duracao"></p>
-      </div>
+      <section class="filmeEncontrado">
+        <section class="caixaposter"><img src="" id="poster" /></section>
+        <section class="informacoes">
+          <h2 id="tituloFilme"></h2>
+
+          <section class="infInicio">
+            <p id="ano"></p>
+            &bull;
+            <p id="duracao"></p>
+            &bull;
+            <p id="genero"></p>
+            &bull;
+            <p id="pais"></p>
+          </section>
+
+          <section class="inf">
+            <label class="label">Diretor:</label>
+            <p class="infAPI" id="diretor"></p>
+          </section>
+
+          <section class="inf">
+            <label class="label">Elenco: </label>
+            <p class="infAPI" id="atores"></p>
+          </section>
+
+          <label class="label">Sinopse</label>
+          <p id="plot"></p>
+
+          <section class="inf">
+            <label class="label">Prêmios e nomeações:</label>
+            <p class="infAPI" id="premios"></p>
+          </section>
+
+          <section class="inf">
+            <label class="label">Rotten Tomatoes:</label>
+            <p class="infAPI" id="rating"></p>
+            <label> &#127813;</label>
+          </section>
+
+          <section class="inf">
+            <label class="label">Idioma:</label>
+            <p class="infAPI" id="idioma"></p>
+          </section>
+        </section>
+      </section>
     </main>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/controllers/filmes-controller.js"></script>
