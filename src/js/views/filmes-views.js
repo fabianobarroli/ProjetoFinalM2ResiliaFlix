@@ -33,6 +33,9 @@ class View {
     const pais = filme.getPais();
     $("#pais").text(pais);
 
+    const premios = filme.getPremio();
+    $("#premios").text(premios);
+
     const duracao = filme.getDuracao();
     $("#duracao").text(duracao);
   }

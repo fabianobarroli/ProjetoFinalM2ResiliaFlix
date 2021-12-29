@@ -3,4 +3,3 @@ $("#btn-pesquisa").click((e) => {
   const filme = new Controller($("#pesquisa-filme").val());
   filme.repassaInfo();
 });
-
