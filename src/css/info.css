@@ -2,7 +2,7 @@ body {
     background-color: #1c1c1c;
 }
 
-.descricaoSite {
+.descricaoSite{
     margin-top: 100px;
     text-align: center;
     color: #A5A681;
@@ -43,21 +43,6 @@ body {
     font-size: 30px;
 }
 
-/* footer{
-    background-color: #363636;
-    text-align: center;
-    padding: 40px 0;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-.copyright{
-    color: #04bf68;
-    font-size: 15px;
-    margin: 20px 0 0;
-} */
-
 footer {
     bottom: 0;
     width: 100%;
@@ -66,9 +51,10 @@ footer {
     background-color: #363636;
     text-align: center;
     padding: 40px 0;
+    position: fixed;
 }
 
-.copyright {
+.copyright{
     color: #04bf68;
     font-size: 15px;
     margin: 20px 0 0;
