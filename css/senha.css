@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: #1c1c1c;
+}
+
+.conteudo-principal {
+  height: inherit;
+}
+.formulario {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  background: #363636;
+}
+
+.formulario h4 {
+  color: #04d976;
+}
+
+section label {
+  color: white;
+  font-weight: bold;
+}
