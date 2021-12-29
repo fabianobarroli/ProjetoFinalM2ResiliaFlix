@@ -34,7 +34,7 @@ body {
 #titulo {
   color: #04bf68;
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
