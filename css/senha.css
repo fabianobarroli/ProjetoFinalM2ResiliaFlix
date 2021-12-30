@@ -2,6 +2,40 @@ body {
   width: 100%;
   height: 100vh;
   background: #1c1c1c;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cabecalho {
+  width: 100%;
+}
+
+.navbar-toggler {
+  background-color: #04bf68;
+}
+
+.cor-especial-navegacao {
+  background-color: #363636;
+  color: #04bf68;
+}
+
+#titulo {
+  color: #04bf68;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.mudacor {
+  font-weight: bold;
+  font-size: 40px;
+  color: #04d976;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
 }
 
 .conteudo-principal {
@@ -21,14 +55,19 @@ section label {
   color: white;
   font-weight: bold;
 }
+#emailHelp {
+  color: white;
+}
 footer {
   background-color: #363636;
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  flex-shrink: 0;
   text-align: center;
-  padding: 40px 0;
 }
 
 .copyright {
   color: #04bf68;
-  font-size: 15px;
-  margin: 0;
+  font-size: 14px;
 }
