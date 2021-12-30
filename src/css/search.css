@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -22,10 +24,6 @@ body {
   width: 100%;
 }
 
-.navbar-toggler {
-  background-color: #04bf68;
-}
-
 .cor-especial-navegacao {
   background-color: #363636;
   color: #04bf68;
@@ -45,10 +43,16 @@ body {
   color: #04d976;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  padding: 5px;
+.background-hamburguer {
+  background-color: #04bf68;
+}
+
+.color-li {
+  color: #04d976 !important;
+}
+
+.color-li:hover {
+  color: #a5a681 !important;
 }
 
 .principal {
