@@ -1,5 +1,5 @@
 class View {
   apareceNaTela(texto) {
-    $("#emailHelp").text(texto);
+    $("#resposta").text(texto);
   }
 }

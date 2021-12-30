@@ -55,8 +55,9 @@ section label {
   color: white;
   font-weight: bold;
 }
-#emailHelp {
+#resposta {
   color: white;
+  font-weight: bold;
 }
 footer {
   background-color: #363636;
