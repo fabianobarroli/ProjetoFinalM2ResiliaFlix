@@ -1,5 +1,47 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+
 body {
     background-color: #1c1c1c;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho {
+    width: 100%;
+}
+
+.cor-especial-navegacao {
+    background-color: #363636;
+    color: #04bf68;
+}
+
+#titulo {
+    color: #04bf68;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.mudacor {
+    font-weight: bold;
+    font-size: 40px;
+    color: #04d976;
+}
+
+.background-hamburguer {
+    background-color: #04bf68;
+}
+
+.color-li {
+    color: #04d976 !important;
+}
+
+.color-li:hover {
+    color: #A5A681 !important;
 }
 
 .descricaoSite {
@@ -8,68 +50,29 @@ body {
     color: #A5A681;
 }
 
-.cor-especial-navegacao {
-    background-color: #363636;
-    color: #04BF68;
-}
-
 .btn {
-    background-color: #8C5332;
+    background-color: #1c1c1c;
     color: #04D976;
 }
 
 .card-title {
-    color: #8C5332;
-}
-
-.card-text {
-    color: #04BF68;
-}
-
-.cuidaBotao {
-    text-align: center;
+    color: #04D976;
 }
 
 .container {
     text-align: center;
 }
 
-.nav-item:hover {
-    color: #04D976;
-}
-
-.navbar-brand {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-}
-
-/* footer{
-    background-color: #363636;
-    text-align: center;
-    padding: 40px 0;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-}
-
-.copyright{
-    color: #04bf68;
-    font-size: 15px;
-    margin: 20px 0 0;
-} */
-
 footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #04BF68;
     background-color: #363636;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    flex-shrink: 0;
     text-align: center;
-    padding: 40px 0;
 }
 
 .copyright {
     color: #04bf68;
-    font-size: 15px;
-    margin: 20px 0 0;
+    font-size: 14px;
 }

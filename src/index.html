@@ -4,37 +4,39 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="initial-scale=1.0">
-   <title>Resilia Flix G8</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="icon" type="image/x-icon" href="./img/pipoca.jpeg" />
+   <title>Randomflix</title>
 </head>
 
 <body>
-   <header>
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top cor-especial-navegacao">
+   <header class="cabecalho">
+      <nav class="navbar navbar-expand-lg navbar-light cor-especial-navegacao">
          <div class="container-fluid">
-            <a class="navbar-brand text-reset" href="#">ResiliaFlix</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#" id="titulo">
+               <span class="mudacor">R</span>andom<span class="mudacor">F</span>lix
+            </a>
+            <button class="navbar-toggler background-hamburguer" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+               aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link active text-reset" aria-current="page" href="#">Início</a>
+                     <a class="nav-link color-li" href="#"><i class="fas fa-home"></i> Início</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-reset" href="#">Filmes</a>
+                     <a class="nav-link color-li" href="#"><i class="fas fa-film"></i> Filmes</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-reset" href="#">Quem somos</a>
+                     <a class="nav-link color-li" href="#"><i class="fas fa-book-open"></i> Sobre</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-reset" href="#">Contato</a>
+                     <a class="nav-link color-li" href="#"><i class="far fa-envelope-open"></i> Contato</a>
                   </li>
                </ul>
             </div>
@@ -43,6 +45,44 @@
    </header>
 
    <main>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="..." class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>First slide label</h5>
+               <p>Some representative placeholder content for the first slide.</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="..." class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Second slide label</h5>
+               <p>Some representative placeholder content for the second slide.</p>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="..." class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Third slide label</h5>
+               <p>Some representative placeholder content for the third slide.</p>
+             </div>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
       <p class="descricaoSite">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa necessitatibus at
          repellendus laborum voluptas
          quaerat atque id adipisci doloremque fuga, et tenetur autem! Facilis facere odit necessitatibus. Cum,
@@ -53,99 +93,222 @@
                <img src="" class="card-img-top img1" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo1"></h5>
-                  <button class="btn btn1">Veja mais</button>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director"></p>
+                     <p class="font-weight-bold" id="year"></p>
+                     <p class="font-weight-bold" id="released"></p>
+                     <p class="font-weight-bold" id="runtime"></p>
+                     <p class="font-weight-bold" id="genre"></p>
+                     <p class="font-weight-bold" id="plot"></p>
+                     <p class="font-weight-bold" id="imdbRating"></p>
+                     <p class="font-weight-bold" id="language"></p>
+                  </div>
+                  <button onclick="apertaBotao()" class="btn btn1">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img2" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo2"></h5>
-                  <a href="" class="btn btn2">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director2"></p>
+                     <p class="font-weight-bold" id="year2"></p>
+                     <p class="font-weight-bold" id="released2"></p>
+                     <p class="font-weight-bold" id="runtime2"></p>
+                     <p class="font-weight-bold" id="genre2"></p>
+                     <p class="font-weight-bold" id="plot2"></p>
+                     <p class="font-weight-bold" id="imdbRating2"></p>
+                     <p class="font-weight-bold" id="language2"></p>
+                  </div>
+                  <button onclick="apertaBotao2()" class="btn btn2">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img3" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo3"></h5>
-                  <a href="" class="btn btn3">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director3"></p>
+                     <p class="font-weight-bold" id="year3"></p>
+                     <p class="font-weight-bold" id="released3"></p>
+                     <p class="font-weight-bold" id="runtime3"></p>
+                     <p class="font-weight-bold" id="genre3"></p>
+                     <p class="font-weight-bold" id="plot3"></p>
+                     <p class="font-weight-bold" id="imdbRating3"></p>
+                     <p class="font-weight-bold" id="language3"></p>
+                  </div>
+                  <button onclick="apertaBotao3()" class="btn btn3">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img4" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo4"></h5>
-                  <a href="" class="btn btn4">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director4"></p>
+                     <p class="font-weight-bold" id="year4"></p>
+                     <p class="font-weight-bold" id="released4"></p>
+                     <p class="font-weight-bold" id="runtime4"></p>
+                     <p class="font-weight-bold" id="genre4"></p>
+                     <p class="font-weight-bold" id="plot4"></p>
+                     <p class="font-weight-bold" id="imdbRating4"></p>
+                     <p class="font-weight-bold" id="language4"></p>
+                  </div>
+                  <button onclick="apertaBotao4()" class="btn btn4">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img5" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo5"></h5>
-                  <a href="" class="btn btn5">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director5"></p>
+                     <p class="font-weight-bold" id="year5"></p>
+                     <p class="font-weight-bold" id="released5"></p>
+                     <p class="font-weight-bold" id="runtime5"></p>
+                     <p class="font-weight-bold" id="genre5"></p>
+                     <p class="font-weight-bold" id="plot5"></p>
+                     <p class="font-weight-bold" id="imdbRating5"></p>
+                     <p class="font-weight-bold" id="language5"></p>
+                  </div>
+                  <button onclick="apertaBotao5()" class="btn btn5">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img6" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo6"></h5>
-                  <a href="" class="btn btn6">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director6"></p>
+                     <p class="font-weight-bold" id="year6"></p>
+                     <p class="font-weight-bold" id="released6"></p>
+                     <p class="font-weight-bold" id="runtime6"></p>
+                     <p class="font-weight-bold" id="genre"></p>
+                     <p class="font-weight-bold" id="plot6"></p>
+                     <p class="font-weight-bold" id="imdbRating6"></p>
+                     <p class="font-weight-bold" id="language6"></p>
+                  </div>
+                  <button onclick="apertaBotao6()" class="btn btn6">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img7" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo7"></h5>
-                  <a href="" class="btn btn7">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director7"></p>
+                     <p class="font-weight-bold" id="year7"></p>
+                     <p class="font-weight-bold" id="released7"></p>
+                     <p class="font-weight-bold" id="runtime7"></p>
+                     <p class="font-weight-bold" id="genre7"></p>
+                     <p class="font-weight-bold" id="plot7"></p>
+                     <p class="font-weight-bold" id="imdbRating7"></p>
+                     <p class="font-weight-bold" id="language7"></p>
+                  </div>
+                  <button onclick="apertaBotao7()" class="btn btn7">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img8" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo8"></h5>
-                  <a href="" class="btn btn8">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director8"></p>
+                     <p class="font-weight-bold" id="year8"></p>
+                     <p class="font-weight-bold" id="released8"></p>
+                     <p class="font-weight-bold" id="runtime8"></p>
+                     <p class="font-weight-bold" id="genre8"></p>
+                     <p class="font-weight-bold" id="plot8"></p>
+                     <p class="font-weight-bold" id="imdbRating8"></p>
+                     <p class="font-weight-bold" id="language8"></p>
+                  </div>
+                  <button onclick="apertaBotao8()" class="btn btn8">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img9" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo9"></h5>
-                  <a href="" class="btn btn9">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director9"></p>
+                     <p class="font-weight-bold" id="year9"></p>
+                     <p class="font-weight-bold" id="released9"></p>
+                     <p class="font-weight-bold" id="runtime9"></p>
+                     <p class="font-weight-bold" id="genre9"></p>
+                     <p class="font-weight-bold" id="plot9"></p>
+                     <p class="font-weight-bold" id="imdbRating9"></p>
+                     <p class="font-weight-bold" id="language9"></p>
+                  </div>
+                  <button onclick="apertaBotao9()" class="btn btn9">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img10" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo10"></h5>
-                  <a href="" class="btn btn10">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director10"></p>
+                     <p class="font-weight-bold" id="year10"></p>
+                     <p class="font-weight-bold" id="released10"></p>
+                     <p class="font-weight-bold" id="runtime10"></p>
+                     <p class="font-weight-bold" id="genre10"></p>
+                     <p class="font-weight-bold" id="plot10"></p>
+                     <p class="font-weight-bold" id="imdbRating10"></p>
+                     <p class="font-weight-bold" id="language10"></p>
+                  </div>
+                  <button onclick="apertaBotao10()" class="btn btn10">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img11" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo11"></h5>
-                  <a href="" class="btn btn11">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director11"></p>
+                     <p class="font-weight-bold" id="year11"></p>
+                     <p class="font-weight-bold" id="released11"></p>
+                     <p class="font-weight-bold" id="runtime11"></p>
+                     <p class="font-weight-bold" id="genre11"></p>
+                     <p class="font-weight-bold" id="plot11"></p>
+                     <p class="font-weight-bold" id="imdbRating11"></p>
+                     <p class="font-weight-bold" id="language11"></p>
+                  </div>
+                  <button onclick="apertaBotao11()" class="btn btn11">Veja mais</button>
                </div>
             </div>
             <div class="card m-3 col-md-2" style="width: 18rem;">
                <img src="" class="card-img-top img12" alt="">
                <div class="card-body">
                   <h5 class="card-title titulo12"></h5>
-                  <a href="" class="btn btn12">Veja mais</a>
+                  <div id="result">
+                     <p class="font-weight-bold" id="director12"></p>
+                     <p class="font-weight-bold" id="year12"></p>
+                     <p class="font-weight-bold" id="released12"></p>
+                     <p class="font-weight-bold" id="runtime12"></p>
+                     <p class="font-weight-bold" id="genre12"></p>
+                     <p class="font-weight-bold" id="plot12"></p>
+                     <p class="font-weight-bold" id="imdbRating12"></p>
+                     <p class="font-weight-bold" id="language12"></p>
+                  </div>
+                  <button onclick="apertaBotao12()" class="btn btn12">Veja mais</button>
                </div>
             </div>
          </div>
+      </div>
    </main>
 
    <footer>
-      <p class="copyright">&copy; Resilia Flix G8 - 2021</p>
+      <p class="copyright">
+         &copy; RandomFlix - Grupo 8 - Desenvolvido para fins didáticos. 2021
+      </p>
    </footer>
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"></script>
-      <script src="./js/paginaInicio.js"></script>
-      <script src="./js/models/infoModel.js"></script>
+   <script src="./js/paginaInicio.js"></script>
+   <script src="../js/main.js"></script>
 </body>
 
 </html>
