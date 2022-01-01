@@ -17,11 +17,11 @@ $.ajax({
 })
 
 $.ajax({
-    url: "http://www.omdbapi.com/?apikey=bc0308c3&t=Medianeras&plot=full",
+    url: "http://www.omdbapi.com/?apikey=bc0308c3&t=SideWalls&plot=full",
     type: "GET",
     success: function (resultado) {
         $(".titulo3").text(resultado.Title)
-        $(".img3").attr("src", "https://images.adsttc.com/media/images/50eb/3550/b3fc/4b25/d500/0085/slideshow/medianeras-cartel.jpg?1361401773")
+        $(".img3").attr("src", resultado.Poster)
     }
 })
 
