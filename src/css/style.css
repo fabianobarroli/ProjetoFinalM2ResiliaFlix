@@ -9,12 +9,17 @@ body {
     align-items: center;
 }
 
+header {
+    position: absolute;
+    z-index: 3;
+}
+
 .cabecalho {
     width: 100%;
 }
 
 .cor-especial-navegacao {
-    background-color: #363636;
+    background-color: #3636367a;
     color: #04bf68;
 }
 
@@ -62,6 +67,25 @@ body {
 .container {
     text-align: center;
 }
+
+.tamanhoGif {
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+
+.letraTituloCarrossel {
+    font-size: 30px;
+}
+
+.letraTextoCarrossel {
+    font-size: 20px;
+}
+
+#carousel .carousel-container {
+    padding: 0;
+}
+
 
 footer {
     background-color: #363636;
