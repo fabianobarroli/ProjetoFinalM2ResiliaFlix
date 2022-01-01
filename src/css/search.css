@@ -117,6 +117,7 @@ body {
   color: #a5a681;
   display: none;
   justify-content: center;
+  align-items: center;
   padding: 10px;
 }
 
@@ -129,7 +130,6 @@ body {
 .informacoes {
   width: 50%;
   padding-left: 25px;
-  padding-top: 20px;
   text-align: justify;
 }
 
@@ -144,6 +144,12 @@ body {
   font-weight: 100;
   display: flex;
   justify-content: space-between;
+}
+
+.colocaCode:nth-child(2)::after,
+.colocaCode:nth-child(2)::before,
+.colocaCode:nth-child(3)::after {
+  content: "  •  ";
 }
 
 .inf {
