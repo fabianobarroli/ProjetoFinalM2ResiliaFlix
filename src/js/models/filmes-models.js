@@ -21,7 +21,7 @@ class Model {
     const requisicao = new XMLHttpRequest();
     requisicao.open(
       "GET",
-      `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}`,
+      `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}&plot=full`,
       false
     );
     requisicao.onload = () => {
