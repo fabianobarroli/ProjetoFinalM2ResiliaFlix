@@ -9,12 +9,13 @@ body {
     font-family: "Quicksand", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
   
 .cabecalho {
     width: 100%;
+    height: 200px;
 }
   
 .navbar-toggler{
@@ -53,13 +54,12 @@ body {
     margin: 20px 20px;
     display: flex;
     padding: 20px;
-
-
-
 }
+
 .col{
     text-align: center;
     padding: 20px;
+    justify-content: center;
 }
 p{
     color: #04bf68;
@@ -75,15 +75,19 @@ a{
     color: #04bf68;
 }
 
-footer{
+.rodape {
     background-color: #363636;
-    text-align: center;
-    padding: 40px 0;
+    height: 80px;
     width: 100%;
+    padding: 25px;
+    flex-shrink: 0;
+    color: #04bf68;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
 }
 
-.copyright{
-    color: #04bf68;
-    font-size: 15px;
-    margin: 20px 0 0;
+.icone{
+    margin-left: 20px;
+   
 }
