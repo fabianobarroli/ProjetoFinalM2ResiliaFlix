@@ -29,7 +29,7 @@ body {
   color: #04bf68;
 }
 
-#titulo {
+/* #titulo {
   color: #04bf68;
   font-size: 25px;
   font-weight: 400;
@@ -41,6 +41,10 @@ body {
   font-weight: bold;
   font-size: 40px;
   color: #04d976;
+} */
+
+#logo {
+  width: 270px;
 }
 
 .background-hamburguer {
@@ -92,7 +96,7 @@ body {
 }
 
 .mostraErro {
-  margin: 45px;
+  margin: 0 45px;
   width: 70%;
   display: none;
   align-items: center;
@@ -100,15 +104,15 @@ body {
 }
 
 .mostraErro img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   padding: 25px;
 }
 
 .mensagem {
   color: #a5a681;
   font-size: 28px;
-  width: 60%;
+  width: 45%;
   text-align: justify;
 }
 
@@ -149,7 +153,7 @@ body {
 .colocaCode:nth-child(2)::after,
 .colocaCode:nth-child(2)::before,
 .colocaCode:nth-child(3)::after {
-  content: "  •  ";
+  content: "    |    ";
 }
 
 .inf {
