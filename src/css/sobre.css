@@ -59,3 +59,11 @@ body {
     background-color: #36363673;
     width: 70%;
 }
+
+.coluna-dois-modal{
+    margin-left: 190px;
+}
+
+.btn-modal{
+    background-color: #04bf68;
+}
