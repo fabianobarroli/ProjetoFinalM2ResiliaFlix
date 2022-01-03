@@ -5,6 +5,7 @@ function apertaBotao() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -13,6 +14,7 @@ function apertaBotao2() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -21,6 +23,7 @@ function apertaBotao3() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -29,6 +32,7 @@ function apertaBotao4() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -37,6 +41,7 @@ function apertaBotao5() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -45,6 +50,7 @@ function apertaBotao6() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -53,6 +59,7 @@ function apertaBotao7() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -61,6 +68,7 @@ function apertaBotao8() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -69,6 +77,7 @@ function apertaBotao9() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -77,6 +86,7 @@ function apertaBotao10() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -85,6 +95,7 @@ function apertaBotao11() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
@@ -93,10 +104,12 @@ function apertaBotao12() {
     $(".container").css("display", "none")
     $(".carousel").css("display", "none")
     $("#informacaoPagina").css("display", "flex")
+    $("#voltar").css("display", "flex")
     controler.chamaRequisicao(tituloFilme)
 }
 
 $("#voltar").click( () => {
+    $("#voltar").css("display", "none")
     $(".container").css("display", "flex")
     $(".carousel").css("display", "flex")
     $("#informacaoPagina").css("display", "none")

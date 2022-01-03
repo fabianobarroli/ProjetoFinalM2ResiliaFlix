@@ -77,6 +77,8 @@ body {
 }
 
 #voltar {
+  margin: auto;
+  display: none;
   border: none;
   background-color: #04d976;
   color: #1c1c1c;
@@ -84,6 +86,8 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tamanhoGif {

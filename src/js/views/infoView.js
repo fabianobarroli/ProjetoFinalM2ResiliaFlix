@@ -38,15 +38,3 @@ class View {
         $("#duracao").text(duracao);
     }
 }
-
-// visualiza(objetoFilme) {
-//     console.log("ta funcionando")
-//     document.querySelector("#director").innerHTML = `<p class="font-weight-bold" id="director">Diretor: ${objetoFilme.Director}</p>`
-//     document.querySelector("#year").innerHTML = `<p class="font-weight-bold" id="year">Ano: ${objetoFilme.Year}</p>`
-//     document.querySelector("#language").innerHTML = `<p class="font-weight-bold" id="language">Linguagem: ${objetoFilme.Language}</p>`
-//     document.querySelector("#plot").innerHTML = `<p class="font-weight-bold" id="plot">Sinopse:${objetoFilme.Plot}</p>`
-//     document.querySelector("#imdbRating").innerHTML = `<p class="font-weight-bold" id="imdbRating">Avaliação IMDB: ${objetoFilme.imdbRating}</p>`
-//     document.querySelector("#released").innerHTML = `<p class="font-weight-bold" id="released">Data de lançamento: ${objetoFilme.Released}</p>`
-//     document.querySelector("#runtime").innerHTML = `<p class="font-weight-bold" id="runtime">Tempo de duração: ${objetoFilme.Runtime}</p>`
-//     document.querySelector("#genre").innerHTML = `<p class="font-weight-bold" id="genre">Gênero: ${objetoFilme.Genre}</p>`
-// }
