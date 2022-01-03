@@ -50,6 +50,9 @@ body {
 .formulario h4 {
   color: #04d976;
 }
+.formulario > section {
+  width: 60%;
+}
 
 section label {
   color: white;
