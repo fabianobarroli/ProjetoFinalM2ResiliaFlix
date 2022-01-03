@@ -110,6 +110,10 @@ body {
   margin-top: 50px;
 }
 
+.carousel-indicators .active {
+  filter: drop-shadow(2px 2px 5px #04bf68)
+}
+
 .card {
   background-color: #363636;
   border-radius: 5px;
