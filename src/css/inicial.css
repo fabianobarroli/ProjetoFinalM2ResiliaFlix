@@ -14,6 +14,10 @@ body {
   width: 100%;
 }
 
+#logo {
+  width: 270px;
+}
+
 .cor-especial-navegacao {
   background-color: #36363660;
   color: #04bf68;
@@ -41,10 +45,19 @@ body {
   color: #04d976 !important;
 }
 
-.color-li:hover {
+.color-li:hover{
   color: #a5a681 !important;
 }
 
+.botao-buscar-filme{
+    background-color: #04d976;
+}
+
+.botao-buscar-filme:hover {
+    background-color: #a5a681 !important;
+}  
+
+/* MAIN */
 .descricaoSite {
   margin-top: 100px;
   text-align: center;
