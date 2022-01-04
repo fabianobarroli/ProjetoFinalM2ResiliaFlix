@@ -36,44 +36,50 @@
         </header>
         <main class="cadastro">
             <form class="container dados-pessoais text-light mt-5 mb-5">
+                <div id="aviso-preenchimento" class="pt-3"></div>
                 <div class="row">
                     <div class="col-md-6 mb-3 mt-3">
                         <label for="exampleFormControlInputDefault" class="form-label">Nome</label>
-                        <input class="form-control" id="exampleFormControlInputDefault" type="text" placeholder="Insira seu nome" aria-label="default input example">
+                        <input id="nome" class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example" required>
                     </div>
                     <div class="col-md-6 mb-3 mt-3">
                         <label for="exampleFormControlInputDefault" class="form-label">Sobrenome</label>
-                        <input class="form-control" id="exampleFormControlInputDefault" type="text" placeholder="Insira seu sobrenome" aria-label="default input example">
+                        <input id="sobrenome" class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-8 mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                        <input id="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                        <div id="emailHelp" class="form-text"></div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="exampleFormControlInputDefault" class="form-label">RG</label>
-                        <input class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example">
+                        <input data-toggle="tooltip" title="Deve-se ter no minimo 9 caracteres" id="rg" class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1" class="form-label">Senha</label>
+                        <input id="senhaUm" type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="form-text validaSenha"></div>
+                        <div class="aviso-senha" class="form-text"><small><i class="fas fa-angle-right"></i> A senha deve ter no minimo 8 dígitos</small></div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="exampleInputPassword1" class="form-label">Confirmar senha</label>
+                        <input id="senhaDois" type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="form-text validaSenha"></div>
                     </div>
                 </div>
-                <button class="btn btn-primary col-md-6 btn-continuar-dados-pessoais mb-3">Continuar</button>
+                <button class="btn btn-primary col-md-6 btn-continuar-dados-pessoais mb-3" type="submit">Continuar</button>
             </form>
             <form class="container endereco text-light mt-5 mb-5">
-                <div class="row">
+                <div id="aviso-preenchimento-endereco" class="pt-3"></div>
+                <div class="row mt-5">
                     <div class="col-md-4 mb-3">
                         <label for="exampleFormControlInputDefault" class="form-label">CEP</label>
-                        <input id="cep" class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example">
+                        <input  data-bs-toggle="tooltip" data-bs-placement="top" title="O cep deve ter 8 dígitos" id="cep" class="form-control" id="exampleFormControlInputDefault" type="text" aria-label="default input example">
+                        <div id="textCep" class="form-text"></div>
                     </div>
                     <div class="col-md-2 mb-3">
                         <label for="exampleFormControlInputDefault" class="form-label">Estado</label>
@@ -104,7 +110,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
                       </div>
                 </div>
-                <button class="btn btn-primary col-md-6 btn-continuar-endereco mb-3">Continuar</button>
+                <button class="btn btn-primary col-md-6 btn-continuar-endereco mb-2" type="submit">Continuar</button>
             </form>
         </main>
 

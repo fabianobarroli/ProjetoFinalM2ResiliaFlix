@@ -60,6 +60,11 @@ body {
     width: 70%;
 }
 
+.teste{
+    width: 70%;
+    margin: 30px 0 0 210px;
+}
+
 .dados-pessoais{
     display: block;
 }
@@ -71,4 +76,3 @@ body {
 .btn-continuar-dados-pessoais, .btn-continuar-endereco{
     margin-left: 210px;
 }
-
