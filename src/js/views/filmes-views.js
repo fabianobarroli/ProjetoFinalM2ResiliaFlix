@@ -12,32 +12,32 @@ class View {
     const ano = filme.getAno();
     $("#ano").text(ano);
 
-    const atores = filme.getAtores();
-    $("#atores").text(atores);
-
-    const diretor = filme.getDiretor();
-    $("#diretor").text(diretor);
+    const duracao = filme.getDuracao();
+    $("#duracao").text(duracao);
 
     const genero = filme.getGenero();
     $("#genero").text(genero);
 
+    const pais = filme.getPais();
+    $("#pais").text(pais);
+
+    const diretor = filme.getDiretor();
+    $("#diretor").text(diretor);
+
+    const atores = filme.getAtores();
+    $("#atores").text(atores);
+
     const plot = filme.getPlot();
     $("#plot").text(plot);
+
+    const premios = filme.getPremio();
+    $("#premios").text(premios);
 
     const rating = filme.getRating();
     $("#rating").text(rating);
 
     const idioma = filme.getIdioma();
     $("#idioma").text(idioma);
-
-    const pais = filme.getPais();
-    $("#pais").text(pais);
-
-    const premios = filme.getPremio();
-    $("#premios").text(premios);
-
-    const duracao = filme.getDuracao();
-    $("#duracao").text(duracao);
   }
 
   mostraErro() {
