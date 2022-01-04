@@ -33,13 +33,13 @@ function trocarTela(){
         e.preventDefault();
         if(($('#cep').val() != "") && ($('#estado').val() != "") && ($('#cep').val().length == 8) && ($('#cidade').val() != "") && ($('#bairro').val() != "") && ($('#rua').val() != "")){
             $(".cadastro").html(`
-                <div class="alert alert-success teste" role="alert">
+                <div class="alert alert-success cadastro-concluido" role="alert">
                     <h4 class="alert-heading">Cadastro efetuado!</h4>
                     <p>Isso aí, você conseguiu concluir o seu cadastro e agora tem acesso a todos os filmes do <strong>Randomflix</strong>. Te desejo um bom divertimento em nossa plataforma. &#10024;</p>
                     <hr>
                     <p class="mb-0">Não esqueça de confirmar seu <strong>e-mail</strong> e qualquer dúvida ou problema ligue para o nosso <strong>SAC 0800 7877 0200.</strong></p>
                 </div>
-                <button type="button" class="btn btn-success teste">Ir para página de Login</button>`
+                <a type="button" class="btn btn-success cadastro-concluido espaco-footer" href="/src/html/login.html">Ir para página de Login</a>`
             );
         } else {
             $("#aviso-preenchimento-endereco").html(`

@@ -1,6 +1,12 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #1c1c1c;
     background-repeat: no-repeat;
@@ -18,8 +24,12 @@ body {
     width: 100%;
 }
 
+#logo {
+    width: 270px;
+}
+
 .cor-especial-navegacao {
-    background-color: #36363662;
+    background-color: #363636;
     color: #04bf68;
 }
 
@@ -52,7 +62,11 @@ body {
 /* MAIN */
 .cadastro{
     width: 100%;
-    height: 80vh;
+    min-height: 50vh;
+}
+
+.cadastro-palavra{
+    color: #04d976!important;
 }
 
 .container{
@@ -60,9 +74,13 @@ body {
     width: 70%;
 }
 
-.teste{
+.cadastro-concluido{
     width: 70%;
     margin: 30px 0 0 210px;
+}
+
+.espaco-footer{
+    margin-bottom: 260px; 
 }
 
 .dados-pessoais{
@@ -75,4 +93,22 @@ body {
 
 .btn-continuar-dados-pessoais, .btn-continuar-endereco{
     margin-left: 210px;
+    background-color: #04d976;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #363636;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.copyright {
+    color: #04bf68;
+    font-size: 14px;
 }
