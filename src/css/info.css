@@ -152,3 +152,28 @@ footer {
   color: #04bf68;
   font-size: 14px;
 }
+
+@media (max-width: 750px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  #informacaoPagina {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informacoes {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #tituloFilme {
+    margin-top: 20px;
+  }
+
+  footer {
+    height: 65px;
+    margin-top: 30px;
+  }
+}
