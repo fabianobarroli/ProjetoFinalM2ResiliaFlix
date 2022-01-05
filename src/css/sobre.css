@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 body {
-    background-image: url(../img/giphy.gif);
+    background-color: #1c1c1c;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Quicksand", sans-serif;
@@ -18,8 +18,12 @@ body {
     width: 100%;
 }
 
+#logo {
+    width: 270px;
+}
+
 .cor-especial-navegacao {
-    background-color: #36363662;
+    background-color: #363636;
     color: #04bf68;
 }
 
@@ -56,8 +60,13 @@ body {
 }
 
 .container-sobre{
-    background-color: #36363673;
+    background-color: #363636;
     width: 70%;
+}
+
+.icon-tamanho{
+    font-size: 20px;
+    color: #04d976;
 }
 
 .coluna-dois-modal{
@@ -66,4 +75,20 @@ body {
 
 .btn-modal{
     background-color: #04bf68;
+}
+
+/* FOOTER */
+footer {
+    background-color: #363636;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.copyright {
+    color: #04bf68;
+    font-size: 14px;
 }
