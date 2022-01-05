@@ -136,12 +136,6 @@ body {
     justify-content: space-between;
 }
 
-.colocaCode:nth-child(2)::after,
-.colocaCode:nth-child(2)::before,
-.colocaCode:nth-child(3)::after {
-    content: "    |    ";
-}
-
 .inf {
     display: flex;
 }
