@@ -132,3 +132,19 @@ footer {
   color: #04bf68;
   font-size: 14px;
 }
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .formulario {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer {
+        height: 65px;
+        margin-top: 30px;
+    }
+}

@@ -111,19 +111,34 @@ a{
     color: #04bf68;
 }
 
-.rodape {
+/* FOOTER */
+footer {
     background-color: #363636;
     height: 50px;
     width: 100%;
     padding: 12px;
     flex-shrink: 0;
-    color: #04bf68;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-top: 25px;
 }
 
-.icone{
-    margin-left: 20px;
-   
+.copyright {
+    color: #04bf68;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .cards-contato{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 60px;
+        margin-top: 30px;
+    }
 }

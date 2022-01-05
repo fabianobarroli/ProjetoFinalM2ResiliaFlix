@@ -69,6 +69,10 @@ body {
     color: #04d976;
 }
 
+.margin-esquerda-cards{
+    margin-left: 50px;
+}
+
 .coluna-dois-modal{
     margin-left: 190px;
 }
@@ -91,4 +95,32 @@ footer {
 .copyright {
     color: #04bf68;
     font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .sobre{
+        min-height: 110vh;
+    }
+
+    .container-sobre{
+        text-align: center;
+        width: 100%;
+    }
+
+    .margin-esquerda-cards{
+        margin-left: 0;
+    }
+
+    .coluna-dois-modal{
+        margin-left: 0;
+    }
+
+    footer {
+        height: 65px;
+        margin-top: 30px;
+    }
 }

@@ -56,6 +56,7 @@ body {
 .conteudo-principal {
   height: 70vh;
 }
+
 .formulario {
   border-radius: 10px;
   background: #363636;
@@ -95,4 +96,23 @@ footer {
 .copyright {
   color: #04bf68;
   font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .conteudo-principal {
+    min-height: 77vh;
+  }
+  
+  .formulario {
+    width: 90%;
+  }
+
+  footer {
+    height: 65px;
+    margin-top: 30px;
+  }
 }

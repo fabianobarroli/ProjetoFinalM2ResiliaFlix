@@ -74,7 +74,7 @@ body {
     width: 70%;
 }
 
-.cadastro-concluido{
+.cadastro-concluido, .btn-cadastro-concluido{
     width: 70%;
     margin: 30px 0 0 210px;
 }
@@ -111,4 +111,35 @@ footer {
 .copyright {
     color: #04bf68;
     font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .btn-continuar-dados-pessoais, .btn-continuar-endereco{
+        margin-left: 130px;
+    }
+
+    .cadastro-concluido{
+        min-height: 60vh;
+        width: 80%;
+        margin:30px;
+    }
+
+    .btn-cadastro-concluido{
+        width: 80%;
+        margin:30px;
+    }
+
+    footer {
+        height: 65px;
+        margin-top: 30px;
+    }
 }

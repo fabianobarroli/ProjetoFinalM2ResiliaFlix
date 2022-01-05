@@ -2,119 +2,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #1c1c1c;
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-color: #1c1c1c;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho {
-  width: 100%;
-  background-color: #363636;
+    width: 100%;
+    background-color: #363636;
 }
 
 #logo {
-  width: 270px;
+    width: 270px;
 }
 
 .background-hamburguer {
-  background-color: #04bf68;
+    background-color: #04bf68;
 }
 
 .color-li {
-  color: #04d976 !important;
+    color: #04d976 !important;
 }
 
 .color-li:hover {
-  color: #a5a681 !important;
+    color: #a5a681 !important;
 }
 
 .destaque {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .destaque > img {
-  width: 450px;
+    width: 450px;
 }
 
 .descricao {
-  width: 60%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .titulo {
-  color: #04bf68 !important;
-  text-align: center;
-  font-size: 35px;
+    color: #04bf68 !important;
+    text-align: center;
+    font-size: 35px;
 }
 
 .texto {
-  color: #a5a681;
-  font-size: 18px;
+    color: #a5a681;
+    font-size: 18px;
 }
 
 .texto > a {
-  text-decoration: none;
-  color: #04bf68;
-  font-weight: 500;
-  size: 20px;
+    text-decoration: none;
+    color: #04bf68;
+    font-weight: 500;
+    size: 20px;
 }
 
 .info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .infCaixa {
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .infCaixa > h4 {
-  color: #04bf68;
-  text-align: center;
-}
+    color: #04bf68;
+    text-align: center;
+    }
 
 .infCaixa > p {
-  text-align: center;
-  font-size: 18px;
-  color: #a5a681;
+    text-align: center;
+    font-size: 18px;
+    color: #a5a681;
 }
 
 .imgInf {
-  width: 300px;
+    width: 300px;
 }
 
 footer {
-  background-color: #363636;
-  height: 50px;
-  width: 100%;
-  padding: 12px;
-  flex-shrink: 0;
-  text-align: center;
-  margin-top: 25px;
+    background-color: #363636;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .copyright {
-  color: #04bf68;
-  font-size: 14px;
+    color: #04bf68;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .destaque{
+        flex-direction: column;
+    }
+
+    .destaque > img {
+        width: 300px;
+    }
+
+    .descricao {
+        width: 40%;
+    }
+
+    .texto {
+        color: #a5a681;
+        font-size: 16px;
+    }
+
+    .info {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 60px;
+    }
 }

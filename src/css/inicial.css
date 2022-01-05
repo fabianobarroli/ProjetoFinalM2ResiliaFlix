@@ -2,51 +2,51 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
 
 body {
-  background-color: #1c1c1c;
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #1c1c1c;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cabecalho {
-  width: 100%;
+    width: 100%;
 }
 
 #logo {
-  width: 270px;
+     width: 270px;
 }
 
 .cor-especial-navegacao {
-  background-color: #36363660;
-  color: #04bf68;
+    background-color: #36363660;
+    color: #04bf68;
 }
 
 #titulo {
-  color: #04bf68;
-  font-size: 25px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 4px;
+    color: #04bf68;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 .mudacor {
-  font-weight: bold;
-  font-size: 40px;
-  color: #04d976;
+    font-weight: bold;
+    font-size: 40px;
+    color: #04d976;
 }
 
 .background-hamburguer {
-  background-color: #04bf68;
+    background-color: #04bf68;
 }
 
 .color-li {
-  color: #04d976 !important;
+    color: #04d976 !important;
 }
 
 .color-li:hover{
-  color: #a5a681 !important;
+    color: #a5a681 !important;
 }
 
 .botao-buscar-filme{
@@ -59,60 +59,64 @@ body {
 
 /* MAIN */
 .descricaoSite {
-  margin-top: 100px;
-  text-align: center;
-  color: #a5a681;
+    margin-top: 100px;
+    text-align: center;
+    color: #a5a681;
 }
 
 .btn:focus {
-  outline: none;
-  box-shadow: none;
+    outline: none;
+    box-shadow: none;
 }
 
 .card-title {
-  color: #04d976;
+    color: #04d976;
 }
 
 .container {
-  text-align: center;
+    text-align: center;
+}
+
+.filmes-responsivo{
+    margin-left: 60px;
 }
 
 .tudo {
-  text-align: center;
-  margin-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 #informacaoPagina {
-  display: none;
-  color: #a5a681;
-  justify-content: center;
-  margin: 50px;
-  align-items: center;
+    display: none;
+    color: #a5a681;
+    justify-content: center;
+    margin: 50px;
+    align-items: center;
 }
 
 #voltar {
-  margin: auto;
-  display: none;
-  border: none;
-  background-color: #04d976;
-  color: #1c1c1c;
-  text-transform: uppercase;
-  width: 200px;
-  height: 50px;
-  border-radius: 100px;
-  justify-content: center;
-  align-items: center;
+    margin: auto;
+    display: none;
+    border: none;
+    background-color: #04d976;
+    color: #1c1c1c;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
 }
 
 .tamanhoGif {
-  object-fit: cover;
-  object-position: 0 60%;
-  height: 500px;
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 500px;
 }
 
 .letraTituloCarrossel {
-  font-size: 30px;
-  text-shadow: 2px 2px 5px #04d976;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px #04d976;
 }
 
 .letraTextoCarrossel {
@@ -121,76 +125,113 @@ body {
 }
 
 .carousel {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .carousel-indicators .active {
-  filter: drop-shadow(2px 2px 5px #04bf68)
+    filter: drop-shadow(2px 2px 5px #04bf68)
 }
 
 .card {
-  background-color: #363636;
-  border-radius: 5px;
-  transition: 0.5s;
+    background-color: #363636;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
 .card:hover {
-  box-shadow: 2px 2px 10px #8fbfa9;
+    box-shadow: 2px 2px 10px #8fbfa9;
 }
 
 .card-img-top {
-  margin-top: 15px;
+    margin-top: 15px;
 }
 
 #poster {
-  border-radius: 5px;
-  border: 15px solid #363636;
-  box-shadow: 2px 2px 10px #8fbfa9;
+    border-radius: 5px;
+    border: 15px solid #363636;
+    box-shadow: 2px 2px 10px #8fbfa9;
 }
 
 .informacoes {
-  width: 50%;
-  padding-left: 25px;
-  text-align: justify;
+    width: 50%;
+    padding-left: 25px;
+    text-align: justify;
 }
 
 #tituloFilme {
-  color: #04bf68;
-  font-size: 30px;
-  font-weight: 400;
+    color: #04bf68;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .infInicio {
-  color: #04d976;
-  font-weight: 100;
-  display: flex;
-  justify-content: space-between;
+    color: #04d976;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
 }
 
 .inf {
-  display: flex;
+    display: flex;
 }
 
 .descr {
-  color: #04bf68;
-  font-weight: 400;
+    color: #04bf68;
+    font-weight: 400;
 }
 
 .infAPI {
-  padding-left: 5px;
-  padding-right: 2px;
+    padding-left: 5px;
+    padding-right: 2px;
 }
 
 footer {
-  background-color: #363636;
-  height: 50px;
-  width: 100%;
-  padding: 12px;
-  flex-shrink: 0;
-  text-align: center;
+    background-color: #363636;
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .copyright {
-  color: #04bf68;
-  font-size: 14px;
+    color: #04bf68;
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .carousel{
+        visibility: hidden;
+    }
+
+    .tamanhoGif {
+        height: 0;
+    }
+
+    .filmes-responsivo{
+        margin-left: 10px;
+    }
+
+    #informacaoPagina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacoes {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #tituloFilme {
+        margin-top: 20px;
+    }
+
+    footer {
+        height: 65px;
+        margin-top: 30px;
+    }
 }
