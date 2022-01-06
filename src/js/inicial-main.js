@@ -4,7 +4,7 @@ function apertaBotao() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao2() {
@@ -13,7 +13,7 @@ function apertaBotao2() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao3() {
@@ -22,7 +22,7 @@ function apertaBotao3() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao4() {
@@ -31,7 +31,7 @@ function apertaBotao4() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao5() {
@@ -40,7 +40,7 @@ function apertaBotao5() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao6() {
@@ -49,7 +49,7 @@ function apertaBotao6() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao7() {
@@ -58,7 +58,7 @@ function apertaBotao7() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao8() {
@@ -67,7 +67,7 @@ function apertaBotao8() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao9() {
@@ -76,7 +76,7 @@ function apertaBotao9() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao10() {
@@ -85,7 +85,7 @@ function apertaBotao10() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao11() {
@@ -94,7 +94,7 @@ function apertaBotao11() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }
 
 function apertaBotao12() {
@@ -103,5 +103,5 @@ function apertaBotao12() {
     localStorage.setItem("tituloFilme", tituloFilme);
   };
   salvaTitulo();
-  window.location.href = "/src/html/info.html";
+  window.location.href = "./info.html";
 }

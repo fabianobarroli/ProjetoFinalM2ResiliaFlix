@@ -10,5 +10,5 @@ window.onload = () => {
 };
 
 $("#voltar").click(() => {
-  window.location.href = "/src/html/inicial.html";
+  window.location.href = "./inicial.html";
 });

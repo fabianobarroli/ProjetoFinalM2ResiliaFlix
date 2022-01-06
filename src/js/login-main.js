@@ -7,7 +7,7 @@ $("#email").focusout(function (e) {
 $("#botao-continuar").click(function (e) {
     e.preventDefault();
     if(($('#email').val().indexOf("@") > -1) && ($("#exampleInputPassword1").val().length >= 8)){
-        window.location.href = "/src/html/inicial.html"
+        window.location.href = "./inicial.html"
     } else {
         $("#aviso-preenchimento").html(`
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -28,7 +28,7 @@ $(".btn-enviar").click(function (e) {
                 <hr>
                 <p class="mb-0">Qualquer dúvida ou problema ligue para o nosso <strong>SAC 0800 7877 0200.</strong></p>
             </div>
-            <a type="button" class="btn btn-success" href="/src/html/login.html">Ir para página de Login</a>`
+            <a type="button" class="btn btn-success" href="./login.html">Ir para página de Login</a>`
         );
     } else {
         $("#aviso-preenchimento").html(`

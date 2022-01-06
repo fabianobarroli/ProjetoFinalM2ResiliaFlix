@@ -39,7 +39,7 @@ function trocarTela(){
                     <hr>
                     <p class="mb-0">Não esqueça de confirmar seu <strong>e-mail</strong> e qualquer dúvida ou problema ligue para o nosso <strong>SAC 0800 7877 0200.</strong></p>
                 </div>
-                <a type="button" class="btn btn-success btn-cadastro-concluido espaco-footer" href="/src/html/login.html">Ir para página de Login</a>`
+                <a type="button" class="btn btn-success btn-cadastro-concluido espaco-footer" href="./login.html">Ir para página de Login</a>`
             );
         } else {
             $("#aviso-preenchimento-endereco").html(`
