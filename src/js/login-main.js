@@ -7,7 +7,7 @@ $("#email").focusout(function (e) {
 $("#botao-continuar").click(function (e) {
     e.preventDefault();
     if(($('#email').val().indexOf("@") > -1) && ($("#exampleInputPassword1").val().length >= 8)){
-        window.location.href = "./inicial.html"
+        window.location.assign("./inicial.html");
     } else {
         $("#aviso-preenchimento").html(`
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
