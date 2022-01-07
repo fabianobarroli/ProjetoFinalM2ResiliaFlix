@@ -36,7 +36,7 @@ class Model {
    });
    requisicao.open(
      "GET",
-     `//www.omdbapi.com/?t=${this.filme}&apikey=$4c45a71f&plot=full`,
+     `//www.omdbapi.com/?t=${this.filme}&apikey=$4c45a71f`,
      false
      );
     requisicao.send();
