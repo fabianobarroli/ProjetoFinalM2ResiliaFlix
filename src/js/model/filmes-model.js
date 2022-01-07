@@ -34,12 +34,12 @@ class Model {
         this._atualizaFilmes(dados);
       }
     });
-    requisicao.send();
     requisicao.open(
       "GET",
       `//www.omdbapi.com/?t=${this.filme}&plot=full&apikey=$4c45a71f`,
       false
-    );
+      );
+    requisicao.send();
   }
 
   _atualizaFilmes(objeto) {
