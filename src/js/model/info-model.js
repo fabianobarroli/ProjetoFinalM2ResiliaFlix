@@ -17,8 +17,8 @@ class Model {
   }
 
   buscaFilme() {
-   // let chave = "4c45a71f";
-   const requisicao = new XMLHttpRequest();
+    const requisicao = new XMLHttpRequest();
+    // let chave = "4c45a71f";
    // requisicao.onload = () => {
    //   if (requisicao.status == 200) {
    //     const response = JSON.parse(requisicao.responseText);
