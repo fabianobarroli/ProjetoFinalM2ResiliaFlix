@@ -56,7 +56,8 @@ body {
 /* MAIN */
 .sobre{
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
+    margin-bottom: 20px;
 }
 
 .container-sobre{
@@ -117,6 +118,10 @@ footer {
 
     .coluna-dois-modal{
         margin-left: 0;
+    }
+
+    .botao-responsivo-modal{
+        margin-bottom: 0;
     }
 
     footer {
