@@ -17,22 +17,28 @@ class Model {
   }
 
   buscaFilme() {
-    let chave = "4c45a71f";
     const requisicao = new XMLHttpRequest();
+    // let chave = "4c45a71f";
+    // requisicao.onload = () => {
+    //   if (requisicao.status == 200) {
+    //     const response = JSON.parse(requisicao.responseText);
+    //     console.log(response);
+    //     this._atualizaFilmes(response);
+    //   } else {
+    //     throw new Error("Sistema fora do ar");
+    //   }
+    // };
+    requisicao.addEventListener("load", () => {
+      if (requisicao.status == 200 && requisicao.readyState == 4) {
+        const dados = JSON.parse(requisicao.responseText);
+        this._atualizaFilmes(dados);
+      }
+    });
     requisicao.open(
       "GET",
-      `http://www.omdbapi.com/?apikey=${chave}&t=${this.filme}&plot=full`,
+      `//www.omdbapi.com/?t=${this.filme}&apikey=4c45a71f&plot=full`,
       false
-    );
-    requisicao.onload = () => {
-      if (requisicao.status == 200) {
-        const response = JSON.parse(requisicao.responseText);
-        console.log(response);
-        this._atualizaFilmes(response);
-      } else {
-        throw new Error("Sistema fora do ar");
-      }
-    };
+      );
     requisicao.send();
   }
 
